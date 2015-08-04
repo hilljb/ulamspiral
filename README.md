@@ -56,7 +56,7 @@ Clone this repository (minimally, all that is needed is the `ulamspiral.py` file
 ## Diagonal Primes
 
 The interest in this rectangular spiral of integers comes from the fact that primes are arranged
-in diagonal lines with a probability higher than one might expect. We can view phenomenon as
+in diagonal lines with a probability higher than one might expect. We can view this phenomenon as
 follows.
 
 We write the following script, which generates primes with a sieve and then displays only prime
