@@ -17,6 +17,13 @@ class UlamSpiral(object):
     """ An Ulam Spiral class.
 
     A class to create Ulam spirals, i.e., spirals of natural numbers on a square grid.
+
+    When initialized, the spiral starts its existence as a single point inside a list of lists. New
+    rows are added to the bottom of the spiral and the current spiral is rotated counter-clockwise.
+    This process continues until the spiral contains its end point (maximum point). At this point,
+    the spiral is rotated until its smallest and second smallest integers are aligned left and
+    right, respectively, in the same row. When a spiral is printed, only values below and including
+    its end point are printed.
     """
     def __init__(self, end, start=1):
         """ Initialize an instance of the UlamSpiral class.
@@ -133,7 +140,10 @@ class UlamSpiral(object):
 
 
     def _orient_(self):
-        """ Orient the current spiral so that 0 and 1 are in the same row with 0 to the left of 1.
+        """ Orient the current spiral.
+
+        Rotates the spiral counter-clockwise until the second smallest integer is to the right of
+        the smallest integer.
 
         This method is used in constructing the spiral and is not intended to be called explicitly.
 
@@ -148,6 +158,9 @@ class UlamSpiral(object):
 
 
     def show(self):
-        """ Print the spiral."""
+        """ Print the spiral.
+
+        Uses the class's __str__ method to pretty-print the spiral.
+        """
         print str(self)
 
