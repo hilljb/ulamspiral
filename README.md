@@ -1,4 +1,7 @@
 # ulamspiral
+
+Holy cow, this is in Python 2. I'll put this on my "boring meetings" to-do list for updating to Python 3.
+
 Python code to generate and print [Ulam Spirals](https://en.wikipedia.org/wiki/Ulam_spiral).
 
 ## Synopsis
